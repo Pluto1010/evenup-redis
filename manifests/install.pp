@@ -15,7 +15,7 @@
 class redis::install ( $version = 'latest' ) {
 
   package {
-    'redis':
+    'redis-server':
       ensure => $version,
   }
 }

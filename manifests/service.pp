@@ -16,10 +16,10 @@ class redis::service (
 ) {
 
   service {
-    'redis':
+    'redis-server':
       ensure  => running,
       enable  => true,
-      require => Package['redis'],
+      require => Package['redis-server'],
   }
 
 }
